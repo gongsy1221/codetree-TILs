@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int a;
+    string a;
 	cin >> a;
 
 	if (a == 'S')
