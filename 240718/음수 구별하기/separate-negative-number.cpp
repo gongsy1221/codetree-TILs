@@ -4,7 +4,8 @@ using namespace std;
 int main() {
     int a;
     cin >> a;
-    if(a % 2 == 0)
+
+    if(a > 0)
         cout << a;
     else
         cout << a << endl << "minus";
