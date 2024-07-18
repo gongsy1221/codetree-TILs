@@ -5,8 +5,8 @@ int main() {
     int a;
     cin >> a;
     if(a == 1)
-        cout << t;
+        cout << "t";
     else
-        cout << f;
+        cout << "f";
     return 0;
 }
