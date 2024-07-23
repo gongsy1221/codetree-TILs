@@ -14,9 +14,9 @@ int main() {
     else
     {
         if(a % 100 == 0)
-            cout << "true";
-        else 
             cout << "false";
+        else 
+            cout << "true";
     }
     return 0;
 }
