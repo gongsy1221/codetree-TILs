@@ -4,11 +4,19 @@ using namespace std;
 int main() {
     int a, b ,c;
     cin >> a >> b >> c;
-    if(a > b && b> c)
-        cout << a;
-    else if(b > a && a > c)
-        cout << b;
+    if(a >= b)
+    {
+        if(a>= c)
+            cout << a;
+        else
+            cout << c;
+    }
     else
-        cout << c;
+    {
+        if(b>c)
+            cout << b;
+        else
+            cout << c;
+    }
     return 0;
 }
