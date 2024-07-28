@@ -7,7 +7,7 @@ int main() {
     while(i <= a)
     {
         cout << i << ' ';
-        i++:
+        i++;
     }
     return 0;
 }
