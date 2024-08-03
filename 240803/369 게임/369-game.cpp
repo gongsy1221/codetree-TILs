@@ -2,15 +2,19 @@
 using namespace std;
 
 int main() {
-    int n,a =1;
+    int n,i =1;
     cin >> n;
-    while(a <= n)
+    while(i <= n)
     {
-        if(a % 3 == 0 || (a - ((a /10)*10)) % 3 == 0)
-            cout << 0 << ' ';
+        if(i % 3 == 0)
+			cout << "0 ";
+		else if(i % 10 == 3 || i % 10 == 6 || i % 10 == 9)
+			cout << "0 ";
+		else if(i / 10 == 3 || i / 10 == 6 || i / 10 == 9)
+			cout << "0 ";
         else
-            cout << a << ' ';
-        a++;
+            cout << i << ' ';
+        i++;
     }
     return 0;
 }
