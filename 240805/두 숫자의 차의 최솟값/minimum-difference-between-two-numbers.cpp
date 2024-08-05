@@ -11,8 +11,8 @@ int main() {
     {
         for(int j = i +1; j < n; j++)
         {
-            if(j - i <= min)
-                min = j - i;
+            if(arr[j] - arr[i] <= min)
+                min = arr[j] - arr[i];
         }
     }
     cout << min;
