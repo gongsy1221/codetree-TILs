@@ -1,21 +1,26 @@
 #include <iostream>
-#include <string>
 using namespace std;
-
+int arr[6];
 int main() {
-    int n, a, sum =0;
+    int n, a, sum = 0, b =0;
     cin >> n;
-    for(int i =0; i<n; i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> a;
         sum += a;
     }
 
-    string c = to_string(sum);
-	char b = c.front();
-	c.push_back(b);
-	c.erase(0, 1);
+    while (sum >= 10)
+    {
+        arr[b] = sum % 10;
+        sum /= 10;
+        b++;
+    }
+    arr[b] = sum;
 
-    cout << c;
-    return 0;
+    for (int i = b-1; i >= 0; i--)
+    {
+        cout << arr[i];
+    }
+    cout << arr[b];
 }
