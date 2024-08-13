@@ -9,7 +9,7 @@ int main() {
         if(a >= 0 && a <= 200)
         {
             sum += a;
-            cnt++:
+            cnt++;
         }
     }
     cout << fixed;
