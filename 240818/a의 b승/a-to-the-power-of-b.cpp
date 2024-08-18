@@ -7,6 +7,9 @@ int main() {
     result = a;
     for(int i = 1; i <b; i++)
         result *= a;
-    cout << result;
+    if(b <= 1)
+        cout << 1;
+    else
+        cout << result;
     return 0;
 }
