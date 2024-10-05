@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int arr[9][9] = {0};
+    int arr[10][10] = {0};
     int n, m, a, b;
     cin >> n >> m;
     for(int i = 1; i<= m; i++)
